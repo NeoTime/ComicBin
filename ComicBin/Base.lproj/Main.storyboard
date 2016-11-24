@@ -1,14 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="OuH-NZ-A81">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ComicBin" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -18,9 +23,105 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" id="N3X-32-Dro">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="ZBk-68-qvg">
+                            <connections>
+                                <segue destination="g0R-w6-CAY" kind="show" id="z7F-Vo-pdN"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1076" y="138.98050974512745"/>
+        </scene>
+        <!--Comic View Controller-->
+        <scene sceneID="x2A-We-gLb">
+            <objects>
+                <viewController id="g0R-w6-CAY" customClass="ComicViewController" customModule="ComicBin" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="r6A-36-6P1"/>
+                        <viewControllerLayoutGuide type="bottom" id="Lai-jl-psZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Sld-FX-rFq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="adventure_superman596.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Kec-64-k8S">
+                                <rect key="frame" x="122" y="99" width="130" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="hVn-C1-Rhf"/>
+                                    <constraint firstAttribute="height" constant="200" id="iVe-ok-jf9"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Comic Title " textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A33-5Z-NHA">
+                                <rect key="frame" x="122.5" y="326" width="130" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6yd-hu-cke">
+                                <rect key="frame" x="172" y="371" width="30" height="30"/>
+                                <state key="normal" title="Add"/>
+                                <connections>
+                                    <action selector="addTapped:" destination="g0R-w6-CAY" eventType="touchUpInside" id="fwv-ha-2z4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="A33-5Z-NHA" firstAttribute="centerX" secondItem="Sld-FX-rFq" secondAttribute="centerX" id="4fn-a6-LSG"/>
+                            <constraint firstItem="Kec-64-k8S" firstAttribute="centerX" secondItem="Sld-FX-rFq" secondAttribute="centerX" id="8bl-Am-Abh"/>
+                            <constraint firstItem="6yd-hu-cke" firstAttribute="centerX" secondItem="Sld-FX-rFq" secondAttribute="centerX" id="GV8-oc-Vaw"/>
+                            <constraint firstItem="6yd-hu-cke" firstAttribute="top" secondItem="A33-5Z-NHA" secondAttribute="bottom" constant="15" id="SNA-sk-FhJ"/>
+                            <constraint firstItem="Kec-64-k8S" firstAttribute="top" secondItem="r6A-36-6P1" secondAttribute="bottom" constant="35" id="Wy5-Pp-ujf"/>
+                            <constraint firstItem="A33-5Z-NHA" firstAttribute="width" secondItem="Kec-64-k8S" secondAttribute="width" id="YdC-F4-Hbn"/>
+                            <constraint firstItem="A33-5Z-NHA" firstAttribute="top" secondItem="Kec-64-k8S" secondAttribute="bottom" constant="27" id="yfI-6e-ltR"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="o5a-DA-lev">
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="camera" id="bNa-HY-Mtq">
+                                <connections>
+                                    <action selector="cameraTapped:" destination="g0R-w6-CAY" id="Aph-wB-I4c"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Photos" id="qIi-YP-Hez">
+                                <connections>
+                                    <action selector="photosTapped:" destination="g0R-w6-CAY" id="TcV-b1-4Fw"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="comicImageView" destination="Kec-64-k8S" id="YCf-OQ-Um5"/>
+                        <outlet property="titleTextField" destination="A33-5Z-NHA" id="V0y-Kp-jCK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="imL-IA-xHQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1809" y="139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ELl-1z-55g">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="OuH-NZ-A81" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="JoV-tw-gcX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Ac0-RW-Zjl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="85D-LH-hpT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="200.80000000000001" y="792.95352323838085"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="adventure_superman596.jpg" width="400" height="616"/>
+    </resources>
 </document>

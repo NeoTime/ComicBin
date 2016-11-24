@@ -13,6 +13,8 @@
 		94777D321DE5EF3B005657B0 /* ComicBin.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 94777D301DE5EF3B005657B0 /* ComicBin.xcdatamodeld */; };
 		94777D341DE5EF3B005657B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94777D331DE5EF3B005657B0 /* Assets.xcassets */; };
 		94777D371DE5EF3B005657B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94777D351DE5EF3B005657B0 /* LaunchScreen.storyboard */; };
+		94777D3F1DE61238005657B0 /* adventure_superman596.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 94777D3E1DE61238005657B0 /* adventure_superman596.jpg */; };
+		94777D411DE6809D005657B0 /* ComicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94777D401DE6809D005657B0 /* ComicViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		94777D331DE5EF3B005657B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94777D361DE5EF3B005657B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		94777D381DE5EF3B005657B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94777D3E1DE61238005657B0 /* adventure_superman596.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = adventure_superman596.jpg; sourceTree = "<group>"; };
+		94777D401DE6809D005657B0 /* ComicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComicViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +60,11 @@
 		94777D281DE5EF3B005657B0 /* ComicBin */ = {
 			isa = PBXGroup;
 			children = (
+				94777D3E1DE61238005657B0 /* adventure_superman596.jpg */,
 				94777D291DE5EF3B005657B0 /* AppDelegate.swift */,
 				94777D2B1DE5EF3B005657B0 /* ViewController.swift */,
 				94777D2D1DE5EF3B005657B0 /* Main.storyboard */,
+				94777D401DE6809D005657B0 /* ComicViewController.swift */,
 				94777D331DE5EF3B005657B0 /* Assets.xcassets */,
 				94777D351DE5EF3B005657B0 /* LaunchScreen.storyboard */,
 				94777D381DE5EF3B005657B0 /* Info.plist */,
@@ -127,6 +133,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94777D3F1DE61238005657B0 /* adventure_superman596.jpg in Resources */,
 				94777D371DE5EF3B005657B0 /* LaunchScreen.storyboard in Resources */,
 				94777D341DE5EF3B005657B0 /* Assets.xcassets in Resources */,
 				94777D2F1DE5EF3B005657B0 /* Main.storyboard in Resources */,
@@ -142,6 +149,7 @@
 			files = (
 				94777D2C1DE5EF3B005657B0 /* ViewController.swift in Sources */,
 				94777D2A1DE5EF3B005657B0 /* AppDelegate.swift in Sources */,
+				94777D411DE6809D005657B0 /* ComicViewController.swift in Sources */,
 				94777D321DE5EF3B005657B0 /* ComicBin.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
