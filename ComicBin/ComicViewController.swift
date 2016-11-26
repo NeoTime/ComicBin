@@ -60,6 +60,8 @@ class ComicViewController: UIViewController, UIImagePickerControllerDelegate, UI
         comic.image = UIImagePNGRepresentation(comicImageView.image!) as NSData?
         
         (UIApplication.shared.delegate as! AppDelegate).saveContext()
+        
+        navigationController!.popViewController(animated: true)
     }
     
     override func didReceiveMemoryWarning() {
