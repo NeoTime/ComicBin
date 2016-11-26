@@ -63,8 +63,8 @@
 				94777D3E1DE61238005657B0 /* adventure_superman596.jpg */,
 				94777D291DE5EF3B005657B0 /* AppDelegate.swift */,
 				94777D2B1DE5EF3B005657B0 /* ViewController.swift */,
-				94777D2D1DE5EF3B005657B0 /* Main.storyboard */,
 				94777D401DE6809D005657B0 /* ComicViewController.swift */,
+				94777D2D1DE5EF3B005657B0 /* Main.storyboard */,
 				94777D331DE5EF3B005657B0 /* Assets.xcassets */,
 				94777D351DE5EF3B005657B0 /* LaunchScreen.storyboard */,
 				94777D381DE5EF3B005657B0 /* Info.plist */,
@@ -275,6 +275,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9B6L668UHZ;
 				INFOPLIST_FILE = ComicBin/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.riglerdigital.ComicBin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -288,6 +289,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9B6L668UHZ;
 				INFOPLIST_FILE = ComicBin/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.riglerdigital.ComicBin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -314,6 +316,7 @@
 				94777D3D1DE5EF3B005657B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

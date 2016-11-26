@@ -38,7 +38,7 @@
                     <navigationItem key="navigationItem" id="N3X-32-Dro">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="ZBk-68-qvg">
                             <connections>
-                                <segue destination="g0R-w6-CAY" kind="show" id="z7F-Vo-pdN"/>
+                                <segue destination="g0R-w6-CAY" kind="show" identifier="comicSegue" id="z7F-Vo-pdN"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -82,13 +82,23 @@
                                     <action selector="addTapped:" destination="g0R-w6-CAY" eventType="touchUpInside" id="fwv-ha-2z4"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3TD-Vk-Jai">
+                                <rect key="frame" x="164.5" y="409" width="45" height="30"/>
+                                <state key="normal" title="Delete"/>
+                                <connections>
+                                    <action selector="addTapped:" destination="g0R-w6-CAY" eventType="touchUpInside" id="XQg-xq-Clj"/>
+                                    <action selector="deleteTapped:" destination="g0R-w6-CAY" eventType="touchUpInside" id="R2y-5B-sHR"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="A33-5Z-NHA" firstAttribute="centerX" secondItem="Sld-FX-rFq" secondAttribute="centerX" id="4fn-a6-LSG"/>
+                            <constraint firstItem="3TD-Vk-Jai" firstAttribute="top" secondItem="6yd-hu-cke" secondAttribute="bottom" constant="8" id="6wo-LU-wwO"/>
                             <constraint firstItem="Kec-64-k8S" firstAttribute="centerX" secondItem="Sld-FX-rFq" secondAttribute="centerX" id="8bl-Am-Abh"/>
                             <constraint firstItem="6yd-hu-cke" firstAttribute="centerX" secondItem="Sld-FX-rFq" secondAttribute="centerX" id="GV8-oc-Vaw"/>
                             <constraint firstItem="6yd-hu-cke" firstAttribute="top" secondItem="A33-5Z-NHA" secondAttribute="bottom" constant="15" id="SNA-sk-FhJ"/>
+                            <constraint firstItem="3TD-Vk-Jai" firstAttribute="centerX" secondItem="Sld-FX-rFq" secondAttribute="centerX" id="UOb-wg-bHB"/>
                             <constraint firstItem="Kec-64-k8S" firstAttribute="top" secondItem="r6A-36-6P1" secondAttribute="bottom" constant="35" id="Wy5-Pp-ujf"/>
                             <constraint firstItem="A33-5Z-NHA" firstAttribute="width" secondItem="Kec-64-k8S" secondAttribute="width" id="YdC-F4-Hbn"/>
                             <constraint firstItem="A33-5Z-NHA" firstAttribute="top" secondItem="Kec-64-k8S" secondAttribute="bottom" constant="27" id="yfI-6e-ltR"/>
@@ -109,7 +119,9 @@
                         </rightBarButtonItems>
                     </navigationItem>
                     <connections>
+                        <outlet property="addupdatebutton" destination="6yd-hu-cke" id="Ohx-iz-rYt"/>
                         <outlet property="comicImageView" destination="Kec-64-k8S" id="YCf-OQ-Um5"/>
+                        <outlet property="deleteButton" destination="3TD-Vk-Jai" id="hyU-B4-jDd"/>
                         <outlet property="titleTextField" destination="A33-5Z-NHA" id="V0y-Kp-jCK"/>
                     </connections>
                 </viewController>
